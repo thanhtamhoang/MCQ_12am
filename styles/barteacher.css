@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #DEAA79 !important;
+    width: 100%;
+}
+
+.container {
+    padding-top: 20px;
+    /* background-color: #AB4459; */
+}
+
+.icon-link {
+    color: black;
+    /* Đổi màu biểu tượng thành đen */
+    text-decoration: none;
+    /* Loại bỏ gạch chân */
+}
+
+.icon-link:hover {
+    color: #555;
+    /* Thêm hiệu ứng khi hover (tùy chọn) */
+}
+
+.active {
+    background-color: white;
+    border-radius: 20px;
+}
