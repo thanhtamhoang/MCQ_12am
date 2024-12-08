@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Home</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- my css -->
+    <!-- <link rel="stylesheet" href="../styles/teacher_home.css"> -->
+    <link rel="stylesheet" href="../styles/bar.css">
+    <!-- css for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <style>
+        .active {
+            background-color: white;
+        }
+
+        .text-bg-info {
+            background-color: #DEAA79 !important;
+        }
+
+        .btn-warning {
+            background-color: #DEAA79 !important;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid ">
+            <a class="navbar-brand " href="./teacher_home.html">STUDY WITH ME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="create_question.html">Create Question</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="question_bank.html">Question Bank</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="create_exam.html">Create Exam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exam_result.html">Exam Result</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-around">
+            <form action="reg.php" class="col-md-8 bg-light p-3 my-3 row" method="post">
+                <h1 class="text-center text-uppercase h3 py-3">Create question</h1>
+                <label for="question">Question</label>
+                <input type="text" name="question" id="question" class="form-control mb-3" required>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <!-- <label for="answer">Answer</label> -->
+                        <input type="text" placeholder="Answer" name="answer[]" id="answer1" class="form-control mb-3">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="answer">Answer</label> -->
+                        <input type="text" placeholder="Answer" name="answer[]" id="answer2" class="form-control mb-3">
+                    </div>
+                    <!-- <div class="form-group">
+                            <label for="answer">Answer</label>
+                            <input type="text" name="answer[]" id="answer" class="form-control mb-3">
+                        </div> -->
+                </div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <!-- <label for="answer">Answer</label> -->
+                        <input type="text" placeholder="Answer" name="answer[]" id="answer3" class="form-control mb-3">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="answer">Answer</label> -->
+                        <input type="text" placeholder="Answer" name="answer[]" id="answer4" class="form-control mb-3">
+                    </div>
+                </div>
+                <div>
+                    <label for="question-type" class=" mb-3">Question type</label>
+                    <select class="question-type" name="question-type" id="question-type">
+                        <option value="" selected disabled hidden>Choose an option</option>
+                        <option value="grammar">Grammar</option>
+                        <option value="vocabulary">Vocabulary</option>
+                        <option value="sentence-arrange">Rearrange the sentence</option>
+                        <option value="word-class">Word class</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="question-difficulty" class="my-3">Difficulty </label>
+                    <select class="question-difficulty" name="question-difficulty" id="question-difficulty">
+                        <option value="" selected disabled hidden>Choose an option</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <input type="submit" value="Submit" class="btn btn-warning mt-4 w-100" name="btn-reg">
+
+            </form>
+        </div>
+    </div>
+    <div class="options-container flex flex-col md:flex-row w-full h-full gap-2">
+        <div class="grid md:grid-flow-col md:auto-cols-fr w-full h-full gap-2">
+            <div
+                class="question-option relative rounded-lg h-full max-h-full overflow-y-auto overflow-x-hidden flex flex-row-reverse md:flex-col bg-brand-a p-1 gap-2 group">
+                <div class="tiptap ProseMirror"></div>
+                <div id="67554efb35768529d6c16de0" data-testid="tiptap-mini-editor-content" class=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../script/teacher_home.js"></script>
+
+</html>

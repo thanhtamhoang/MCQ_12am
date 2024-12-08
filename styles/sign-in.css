@@ -1,10 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 0px;
 }
-
 form {
   display: inline-block;
   padding: 20px;
@@ -22,7 +20,7 @@ input {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #B2A4FF !important;
   color: white;
   border: none;
   border-radius: 4px;
@@ -30,5 +28,11 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #B2A4FF !important;
+}
+.text-bg-info{
+  background-color: #DEAA79 !important;
+}
+.btn-warning{
+  background-color: #DEAA79 !important;
 }
