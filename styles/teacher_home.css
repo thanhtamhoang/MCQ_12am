@@ -60,7 +60,7 @@ button:hover {
 .btn-custom:hover {
   transform: translateY(-5px);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-}
+}x
 
 .btn-custom i {
   font-size: 30px; /* Kích thước icon */
